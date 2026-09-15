@@ -26,7 +26,7 @@ export function initializePresentation(){
     textBindings.forEach(({node,key,prefix,suffix})=>{node.nodeValue=prefix+(dictionary[key]||key)+suffix;});
     root.lang=currentLanguage==='zh'?'zh-CN':currentLanguage==='ja'?'ja':'en';
     root.dataset.language=currentLanguage;
-    document.title='Enterprise AI · Lenovo';
+    document.title='ITEM Enterprise AI';
     languageCurrent.textContent=languageNames[currentLanguage];
     languageButton.setAttribute('aria-label',localeUI[currentLanguage].selectLanguage+': '+languageNames[currentLanguage]);
     languageButton.title=localeUI[currentLanguage].selectLanguage;
