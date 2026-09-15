@@ -3,7 +3,8 @@ import path from "node:path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "./",
+  // DEPLOY_BASE is set by the GitHub Pages workflow (e.g. "/item-ai-plateform-v2/").
+  base: process.env.DEPLOY_BASE || "./",
   plugins: [
     {
       name: "copy-presentation-assets",

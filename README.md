@@ -1,4 +1,6 @@
-# ITEM Presentation
+# ITEM Presentation (v2)
+
+Published at <https://tommyyula.github.io/item-ai-plateform-v2/>. Source mirrored from `Taylor180520/Taylor180520.github.io`.
 
 Componentized presentation site for ITEM's enterprise AI solutions. The visual
 markup remains plain HTML, assembled by Vite from one file per presentation

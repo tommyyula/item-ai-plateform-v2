@@ -41,6 +41,9 @@ const sections = [
   operationsTrainingSection,
 ];
 
+/** Root-absolute asset references are rebased onto the deploy base (Pages sub-path). */
+const withBase = (html) => html.replaceAll('"/assets/', `"${import.meta.env.BASE_URL}assets/`);
+
 export function renderApp(container) {
-  container.innerHTML = `${siteHeader}<main>${sections.join("\n")}</main>`;
+  container.innerHTML = withBase(`${siteHeader}<main>${sections.join("\n")}</main>`);
 }
